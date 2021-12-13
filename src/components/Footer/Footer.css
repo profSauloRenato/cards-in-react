@@ -1,0 +1,23 @@
+.footer{
+    background: #1c1c1c;
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer-cont{
+    display: flex;
+    width: 100%;
+    max-width: 1320px;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.footer-cont p{
+    color: #FFFFFF;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}

@@ -1,0 +1,139 @@
+.cards{
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 8px;
+    max-width: 24%;
+    margin: 15px 0;
+}
+
+.wishlist{
+    width: 48px;
+    height: 48px;
+    /*background: url(../../assets/heartBlack.png);*/
+    background-size: 100%;
+    background: #F2F3F6;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.wishlist:hover{
+    background: #FEE5EC;
+}
+
+.active, .active:hover{
+    background: #DA4B4F;
+}
+
+.card:hover{
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card-title{
+    min-height: 70px;
+    font-size: 14px;
+}
+
+.card-text{
+    font-style: normal;
+    letter-spacing: -0.005em;
+    flex: none;
+    flex-grow: 0;
+    margin: 4px 0px;
+    text-align: left;
+}
+
+.oldPrice{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration-line: line-through;
+    color: #B5B5B6;
+    order: 0;
+}
+
+.bestPrice{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #DA4B4F;
+    order: 1;
+}
+
+.portion{
+    font-size: 12px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+
+    position: static;
+    width: 90%;
+    height: 48px;
+    left: 32px;
+    top: 488px;
+
+    background: #40B25C;
+    border-radius: 5px;
+
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 32px auto;
+    
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: -0.005em;
+    text-transform: uppercase;
+
+    /* grayscale/0 */
+
+    color: #FFFFFF;
+}
+
+.btn:hover{
+    background: #1C6C3E;
+    color: #FFFFFF;
+}
+
+.btnAdd{
+    background: url(../../assets/btnAdd.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #1C1C1C;
+}
+
+.btnAdd:hover{
+    background: url(../../assets/btnAdd.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media (max-width: 800px){
+    .card{
+        display: flex;
+        min-width: 48%;
+    }
+}
+
+@media (max-width: 400px){
+    .card{
+        display: flex;
+        min-width: 100%;
+    }
+}
